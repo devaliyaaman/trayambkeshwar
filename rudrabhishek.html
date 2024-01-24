@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaalsarp Puja</title>
+    <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Kalam:wght@400;700&family=Nunito&family=Pangolin&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    .main-image {
+        display: flex;
+        padding: 2rem 1rem;
+
+    }
+
+    .language-toggle {
+        padding: 3px;
+        top: 0%;
+        right: 0;
+    }
+
+    .main-image img {
+        width: 100%;
+        max-height: 40vh;
+    }
+
+    .text-content {
+        padding: 1rem 2rem;
+        justify-content: center;
+    }
+
+    .star-list {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: left; */
+        text-align: left;
+        /* align-items: left; */
+    }
+
+    .about {
+        width: auto;
+    }
+</style>
+
+<body>
+
+    <div class="main-image">
+        <img src="rudra_abhishek.jpg" alt="">
+    </div>
+
+    <div class="language-toggle">
+        <span class="label" id="toggleLanguageEnglish" onclick="switchToEnglish()">English</span>
+        <span class="label" id="toggleLanguageHindi" onclick="switchToHindi()" style="display: none;">हिंदी</span>
+        <span class="icon">&#x1F30E;</span>
+    </div>
+
+    <div id="rudrabhishekHindi">
+        <div class="services-name">
+            रुद्राभिषेक क्या है?
+        </div>
+        <div class="text-content">
+            <p>
+                रुद्राभिषेक पूजा एक वैदिक हिन्दू रीति है जिसमें भगवान शिव को उनके रुद्र रूप में पूजा जाता है और उन्हें
+                पवित्र नहाने, फूलों, और पवित्र सामग्रियों के साथ अर्पित किया जाता है, जबकि उनके 108 नामों का पाठ किया
+                जाता है। यह कार्यक्रम देवता को प्रसन्न करने और दुष्ट शक्तियों को दूर करने, घर में समृद्धि लाने के लिए
+                किया जाता है।
+            </p>
+
+        </div>
+
+        <div class="services-name">
+            पौराणिक उत्पत्ति
+        </div>
+        <div class="text-content">
+            <p>
+                रुद्राभिषेक के पीछे की कहानी प्राचीन हिन्दू ग्रंथ, श्री रुद्रम चमकम में उल्लिखित है। कहा जाता है कि एक
+                महान सूखे के समय, राक्षस राजा रावण, जो भगवान शिव के भक्त थे, ने बड़ी भक्ति से रुद्राभिषेक किया और भगवान
+                शिव को विभिन्न अर्पण किया।
+            </p>
+
+        </div>
+
+        <div class="services-name">
+            यह पूजा किसे करनी चाहिए?
+        </div>
+        <div class="text-content">
+            <p>इन लक्षणों वाले व्यक्ति को यह पूजा करनी चाहिए</p>
+            <ol class="star-list">
+                <li>नकारात्मक ऊर्जाओं और संभावित खतरों को दूर करने के लिए।</li>
+                <li>समृद्धि और सम्पूर्ण भलाइयों को बढ़ावा देने के लिए।</li>
+                <li>स्वास्थ्य समस्याओं को अधिक करने के लिए। </li>
+                <li>व्यक्तिगत और पेशेवर रिश्तों को समर्थन के लिए। </li>
+                <li>घर में शांति बनाए रखने के लिए।</li>
+            </ol>
+        </div>
+
+        <div class="services-name">
+            रुद्राभिषेक पूजा के लाभ:
+        </div>
+        <div class="text-content">
+
+            <ol class="star-list">
+                <li>रोगी चंद्रमा के अनुकूल प्रभाव कम करता है।
+                </li>
+                <li>नक्षत्रों के सकारात्मक प्रभाव को बढ़ाता है, उनके उत्तराधिकारी प्रभावों को कम करता है। </li>
+                <li>शिक्षा, रोजगार, और करियर में सफलता प्राप्त करता है।</li>
+                <li>नकारात्मकता को दूर करता है और जीवन की सुरक्षा करता है।
+                </li>
+                <li>आर्थिक समस्याओं को सुलझाता है।
+                </li>
+                <li>स्थायी संबंधों में एकता और समृद्धि को बढ़ाता है।
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div id="rudrabhishekEnglish" style="display: none;">
+        <div class="services-name">
+            What is Rudrabhisekh ?
+        </div>
+        <div class="text-content">
+            <p>
+                Rudrabhishek puja is a Vedic Hindu Ritual where Lord Shiva is worshipped in his Rudra form and given a
+                sacred bath, along with flowers and holy materials, while his 108 names are chanted. The ceremony is
+                performed to please the deity and eliminate evil forces and bring prosperity in the house.
+            </p>
+
+        </div>
+
+        <div class="services-name">
+            Mythological Origin
+        </div>
+        <div class="text-content">
+            <p>
+                The story behind the Rudrabhishek is mentioned in the ancient Hindu text, the Shri Rudram Chamakam. It
+                is said that during the time of a great drought, the demon king Ravana, who was an ardent devotee of
+                Lord Shiva, performed the Rudrabhishek with great devotion and offered various offerings to Lord Shiva.
+            </p>
+        </div>
+
+        <!-- <div class="services-name">
+            Effects of Kal Sarp Dosh
+        </div>
+        <div class="text-content">
+            <ol class="star-list">
+                <li>Health troubles may arise.</li>
+                <li>Finding happiness and peace might be challenging.</li>
+                <li>Progress could face obstacles and delays.</li>
+                <li>Peace of mind may be disrupted.</li>
+                <li>Worries and misfortunes may occur.</li>
+                <li>Many fear Kal Sarp Dosh due to potential life challenges.</li>
+            </ol>
+        </div> -->
+
+        <div class="services-name">
+            Why Should Perform Rudrabhishek?
+        </div>
+        <div class="text-content">
+            <p>An individual with these symptoms should perform this Pooja</p>
+            <ol class="star-list">
+                <li>To eliminate negative vibes and potential threats from life.</li>
+                <li>To promote prosperity and overall well-being.</li>
+                <li>For overcoming health problems.</li>
+                <li>To harmonize personal and professional relationships.</li>
+                <li>For creating serenity at home.</li>
+            </ol>
+        </div>
+
+        <div class="services-name">
+            Benefits of Performing Rudrabhishek
+        </div>
+        <div class="text-content">
+
+            <ol class="star-list">
+                <li>Lessens the unfavorable effects of the resentful moon.</li>
+                <li>Increases positive effects of nakshatras, minimizing adverse effects.</li>
+                <li>Achieves success in education, employment, and career.</li>
+                <li>Eliminates negativity and protects life.
+                </li>
+                <li>Resolves financial problems.</li>
+                <li>Promotes unity and prosperity in enduring connections.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- About  -->
+    <div class="pandit-pic">
+        <img src="favicon.ico.png" alt="">
+    </div>
+    <div id="aboutHindi">
+        <div class="services-name">
+            पं. पुष्पेंद्र गुरुजी के बारे में
+        </div>
+        <div class="about" id="yajman">
+            <div>
+                <p>
+                    10+ वर्षों का अनुभवी पंडित जो त्र्यंबकेश्वर में सभी प्रकार की पूजा जैसे कालसर्प शांति, पितृ शांति,
+                    नारायण
+                    नागबलि, महा मृत्युंजय जाप और रुद्र अभिषेक पूजा कर सकता है।
+                    पंडित जी त्रयंबकेश्वर में कालसर्प दोष पूजा करने में विशेषज्ञ हैं जो त्रयंबकेश्वर में सबसे महत्वपूर्ण
+                    पूजा
+                    है।
+                </p>
+
+                <p>
+                    गुरु जी ने त्र्यंबकेश्वर में 500 से अधिक कालसर्प पूजाएं की हैं, यही कारण है कि वह कालसर्प पूजा के
+                    लिए
+                    त्र्यंबकेश्वर में सबसे अच्छे पंडितों में से एक हैं।
+                </p>
+
+                <p>पंडित जी शुद्ध वैदिक विधियों और अनुष्ठानों का पालन करते हुए सभी पूजा करते हैं।
+                </p>
+            </div>
+            <ol class="star-list">
+                <li>अधिकृत एवं प्रमाणित पंडित</li>
+                <li>त्र्यंबकेश्वर मंदिर पंडित</li>
+                <li>पुराणे और शिक्षित पंडित</li>
+                <li>कुंडली के बारे में निःशुल्क परामर्श</li>
+            </ol>
+            <div style="display: flex; gap: 1rem;">
+                <button class="btn btn-success" onclick="callMe()">संपर्क करें</button>
+                <button class=" btn btn-primary" onclick="whatsappMe()">पूजा करायें</button>
+            </div>
+        </div>
+    </div>
+    <div id="aboutEnglish" style="display: none;">
+        <div class="services-name">
+            Best Pandit in Triambakeshwar
+        </div>
+        <div class="about" id="yajmanE">
+            <div>
+                <p>
+                    10+ Years of Experienced pandit who can perform all type of pooja in trimbakeshwar like kalsarp
+                    shanti, pitra shanti, narayan nagbali, maha mrityunjay jaap and Rudra abhishek puja.
+                </p>
+                <p>
+                    Pandit ji is a specialist in doing Kal sarp dosh puja in triambkeshwar which is most importent puja
+                    in Trimbakeshwar.
+                </p>
+
+                <p>
+                    Guru ji has performed 500+ Kalsarp puja in Trimbakeshwar that's why he is one of the best pandit in
+                    Trimbakeshwar for Kalsarp puja.
+                </p>
+
+                <p>
+                    Pandit ji perform all puja following pure vedic methods and rituals.
+                </p>
+            </div>
+            <ol class="star-list">
+                <li>Authorised and Certified </li>
+                <li>10+ years experienced</li>
+                <li>Kalsarp puja specialist</li>
+                <li>Free kundali consultation</li>
+            </ol>
+            <div style="display: flex; gap: 1rem;">
+                <button class="btn btn-success" onclick="callMe()">Contact</button>
+                <button class=" btn btn-primary" onclick="whatsappMe()">Book Puja</button>
+            </div>
+        </div>
+    </div>
+
+    <img src="https://cdn-icons-png.flaticon.com/128/4213/4213179.png" id="call" onclick="callMe()" alt="">
+    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png" id="whatsapp" onclick="whatsappMe()" alt="">
+
+    <!-- Footer SEction -->
+    <footer>
+        卐 पं. पुष्पेंद्र गुरुजी, नासिक 卐
+    </footer>
+
+    <script>
+        function callMe() {
+            window.location.href = "tel:+91 8817453140";
+        }
+        function whatsappMe() {
+            var whatsappNumber = "+918817453140"; // Replace with the actual WhatsApp number
+
+            // Construct the WhatsApp URL
+            var whatsappUrl =
+                "https://wa.me/" + whatsappNumber + "?text=" + "Jai Shree Ram";
+
+            // Open the WhatsApp URL in a new tab
+            window.open(whatsappUrl, "_blank");
+        }
+
+        function switchToEnglish() {
+            document.getElementById("toggleLanguageEnglish").style.display = "none";
+            document.getElementById("toggleLanguageHindi").style.display = "block";
+
+            document.getElementById("rudrabhishekHindi").style.display = "none";
+            document.getElementById("rudrabhishekEnglish").style.display = "block";
+
+            document.getElementById("aboutHindi").style.display = "none";
+            document.getElementById("aboutEnglish").style.display = "block";
+        }
+        function switchToHindi() {
+            document.getElementById("toggleLanguageEnglish").style.display = "block";
+            document.getElementById("toggleLanguageHindi").style.display = "none";
+
+            document.getElementById("rudrabhishekHindi").style.display = "block";
+            document.getElementById("rudrabhishekEnglish").style.display = "none";
+
+            document.getElementById("aboutHindi").style.display = "block";
+            document.getElementById("aboutEnglish").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

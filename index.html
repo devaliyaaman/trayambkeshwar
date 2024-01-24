@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pujan in Triyambkeshwar</title>
+    <link rel="icon" type="image/x-icon" href="profile.webp">
+    <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Kalam:wght@400;700&family=Nunito&family=Pangolin&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-transparent">
+        <div class="container">
+            <div class="nav-name">
+                !! <span class="name"> पं. पुष्पेंद्र गुरुजी </span> !!
+            </div>
+            <button class="navbar-toggler nav-menu-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="max-width: 2rem;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-menu" id="navMenuHindi">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#kundali"> कुंडली दिखाये </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#yajman">हमारे यजमान </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"> संपर्क करे </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#pujayeHindi"> हमारे द्वार की जाने वाली पूजाएं </a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav nav-menu" id="navMenuEnglish" style="display: none;">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#kundali"> Kundali </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#yajman">Our Yajmans </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"> Contact Us </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#pujayeHindi"> Pujans available </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="language-toggle">
+        <span class="label" id="toggleLanguageEnglish" onclick="switchToEnglish()">English</span>
+        <span class="label" id="toggleLanguageHindi" onclick="switchToHindi()" style="display: none;">हिंदी</span>
+        <span class="icon">&#x1F30E;</span>
+
+        <!-- <div class="button r" id="button-3">
+            <input type="checkbox" class="checkbox" />
+            <div class="knobs"></div>
+            <div class="layer"></div>
+        </div> -->
+    </div>
+
+    <!-- Home Section -->
+    <div class="home">
+        <div class="temple">
+            <img src="back1.jpg" alt="">
+        </div>
+        <div class="line"></div>
+        <div class="intro" id="introHindi">
+            काल सर्प दोष निवारण पूजा त्र्यंबकेश्वर
+            <button class="btn btn-success call-btn" onclick="callMe()">Call Now</button>
+        </div>
+        <div class="intro" id="introEnglish" style="display: none;">
+            Kaal Sarp Dosh Nivaran Puja, Trayambkeshwar
+            <button class="btn btn-success call-btn" onclick="callMe()">Call Now</button>
+        </div>
+    </div>
+
+    <!-- Pujaye section  -->
+    <div class="services" id="pujayeHindi">
+        <div class="services-name">
+            पूजाएं
+        </div>
+        <div class="containerServices">
+
+            <div class="card" style="width: 90vw;">
+                <img src="kaalsarp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><a href="kalsarp.html">काल सर्प दोष निवारण</a></p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 90vw;">
+                <img src="rudrabhishek.jpg" class="card-img-top" style="max-height: 45vh;" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><a href="rudrabhishek.html">रुद्राभिषेक</a></p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 90vw;">
+                <img src="mahamrityunjay.jpg" class="card-img-top" style="height: 34vh;" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><a href="mahamrityunjaya.html">महामृत्युंजय जाप</a></p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 90vw;">
+                <img src="rahuketu.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><a href="rahuketu.html">राहु केतु दोष निवारण</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="services" id="pujayeEnglish" style="display: none;">
+        <div class="services-name">
+            Pujans
+        </div>
+        <div class="containerServices">
+
+            <div class="card" style="width: 90vw;">
+                <img src="kaalsarp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><a href="kalsarp.html">KaalSarp Dosh Pujan</a></p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 90vw;">
+                <img src="rudrabhishek.jpg" class="card-img-top" style="max-height: 45vh;" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><a href="rudrabhishek.html">Rudrabhishek</a></p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 90vw;">
+                <img src="mahamrityunjay.jpg" class="card-img-top" style="height: 34vh;" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><a href="mahamrityunjaya.html">Mahamrityunjaya Jaap</a></p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 90vw;">
+                <img src="rahuketu.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><a href="rahuketu.html">Rahu Ketu Pujan</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Gallery Section -->
+    <div class="image-gallery">
+        <div class="services-name" id="imageGalleryHindi">
+            फोटो गैलरी
+        </div>
+        <div class="services-name" id="imageGalleryEnglish" style="display: none;">
+            Images Gallery
+        </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <!-- Your carousel items go here -->
+                <div class="carousel-item active">
+                    <img src="c1.jpg" class="d-block w-100 h-100" style="max-height: 30vh;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="c2.jpg" class="d-block w-100 h-100" style="max-height: 30vh;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="c3.jpg" class="d-block w-100 h-100" style="height: 30vh;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="c4.jpg" class="d-block w-100 h-100" style="max-height: 30vh;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs7P46rwRkVjGQpVXEX9B_ovYKMtKOHpbzvQ&usqp=CAU"
+                        class="d-block w-100 h-100" style="max-height: 30vh;" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- About Section  -->
+    <div class="pandit-pic">
+        <img src="favicon.ico.png" alt="">
+    </div>
+    <div id="aboutHindi">
+        <div class="services-name">
+            पं. पुष्पेंद्र गुरुजी के बारे में
+        </div>
+        <div class="about" id="yajman">
+            <div>
+                <p>
+                    10+ वर्षों का अनुभवी पंडित जो त्र्यंबकेश्वर में सभी प्रकार की पूजा जैसे कालसर्प शांति, पितृ शांति,
+                    नारायण
+                    नागबलि, महा मृत्युंजय जाप और रुद्र अभिषेक पूजा कर सकता है।
+                    पंडित जी त्रयंबकेश्वर में कालसर्प दोष पूजा करने में विशेषज्ञ हैं जो त्रयंबकेश्वर में सबसे महत्वपूर्ण
+                    पूजा
+                    है।
+                </p>
+
+                <p>
+                    गुरु जी ने त्र्यंबकेश्वर में 500 से अधिक कालसर्प पूजाएं की हैं, यही कारण है कि वह कालसर्प पूजा के
+                    लिए
+                    त्र्यंबकेश्वर में सबसे अच्छे पंडितों में से एक हैं।
+                </p>
+
+                <p>पंडित जी शुद्ध वैदिक विधियों और अनुष्ठानों का पालन करते हुए सभी पूजा करते हैं।
+                </p>
+            </div>
+            <ol class="star-list">
+                <li>अधिकृत एवं प्रमाणित पंडित</li>
+                <li>त्र्यंबकेश्वर मंदिर पंडित</li>
+                <li>पुराणे और शिक्षित पंडित</li>
+                <li>कुंडली के बारे में निःशुल्क परामर्श</li>
+            </ol>
+            <div style="display: flex; gap: 1rem;">
+                <button class="btn btn-success" onclick="callMe()">संपर्क करें</button>
+                <button class=" btn btn-primary" onclick="whatsappMe()">पूजा करायें</button>
+            </div>
+        </div>
+    </div>
+    <div id="aboutEnglish" style="display: none;">
+        <div class="services-name">
+            About Pt. Pushpendra Guruji
+        </div>
+        <div class="about" id="yajmanE">
+            <div>
+                <p>
+                    10+ Years of Experienced pandit who can perform all type of pooja in trimbakeshwar like kalsarp
+                    shanti, pitra shanti, narayan nagbali, maha mrityunjay jaap and Rudra abhishek puja.
+                </p>
+                <p>
+                    Pandit ji is a specialist in doing Kal sarp dosh puja in triambkeshwar which is most importent puja
+                    in Trimbakeshwar.
+                </p>
+
+                <p>
+                    Guru ji has performed 500+ Kalsarp puja in Trimbakeshwar that's why he is one of the best pandit in
+                    Trimbakeshwar for Kalsarp puja.
+                </p>
+
+                <p>
+                    Pandit ji perform all puja following pure vedic methods and rituals.
+                </p>
+            </div>
+            <ol class="star-list">
+                <li>Authorised and Certified </li>
+                <li>10+ years experienced</li>
+                <li>Kalsarp puja specialist</li>
+                <li>Free kundali consultation</li>
+            </ol>
+            <div style="display: flex; gap: 1rem;">
+                <button class="btn btn-success" onclick="callMe()">Contact</button>
+                <button class=" btn btn-primary" onclick="whatsappMe()">Book Puja</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Place Section  -->
+    <div>
+        <div class="services-name" id="placeHindi">
+            स्थान
+        </div>
+        <div class="services-name" id="placeEnglish" style="display: none;">
+            Place
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8135472150802!2d73.52821277246937!3d19.932260481456616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddf50eba9fa561%3A0x34378d7edfe4cb3!2sThrayambakeshwaram%20Temple!5e0!3m2!1sen!2sin!4v1704741262631!5m2!1sen!2sin"
+            width="100%" height="300" style="border:0; padding: 1rem 0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Contact form  -->
+    <div class="services-name" id="contactHindi">संपर्क करें</div>
+    <div class="services-name" id="contactEnglish" style="display: none;">Contact Us</div>
+    <div class="contact" id="contact">
+        <div class="contactfrm">
+            <div style="padding: 1rem 0rem;">
+                <p>
+                    512C नासिक, त्रयंबकेश्वर, महाराष्ट्र, भारत
+                </p>
+                <p>panditmohanji@gmail.com</p>
+                <p>+91 8817453140</p>
+            </div>
+            <div class="form">
+                <h2>Get in Touch</h2>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputFirstName" class="form-label">
+                            Name
+                        </label>
+                        <input type="text" class="form-control fc" id="firstName"></input>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPhone" class="form-label">
+                            Phone no.
+                        </label>
+                        <input type="number" class="form-control fc " id="inputPhone"></input>
+                    </div>
+                    <div class="col-md-12 message">
+                        <label for="inputMessage" class="form-label">
+                            Message
+                        </label>
+                        <textarea type="text" class="form-control fc" id="inputMessage" placeholder=""></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-success col-md-12">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <img src="https://cdn-icons-png.flaticon.com/128/4213/4213179.png" id="call" onclick="callMe()" alt="">
+    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png" id="whatsapp" onclick="whatsappMe()" alt="">
+
+
+    <!-- Footer SEction -->
+    <footer>
+        卐 पं. पुष्पेंद्र गुरुजी, नासिक 卐
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

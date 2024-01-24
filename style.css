@@ -1,0 +1,455 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Kalam', cursive;
+}
+
+body {
+    color: #af2020;
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Pangolin', cursive;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(75deg,
+            #ffe6a7,
+            #f9d8b3,
+            #f2c6c8,
+            #e8b3d4);
+}
+
+nav {
+    display: flex;
+    font-family: 'Amita', serif;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.nav-name {
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 0.5rem auto;
+    color: red;
+}
+
+.name {
+    /* color: black; */
+    padding: 0 1rem;
+}
+
+.nav-menu {
+    font-family: 'Amita', serif;
+    display: flex;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(180deg,
+            #ffe6a7,
+            #f9d8b3);
+}
+
+.temple {
+    height: 30%;
+}
+
+.line {
+    position: absolute;
+    top: 13%;
+    margin: 0rem 1.5rem;
+    background-color: #ef4c16;
+    height: 3px;
+    width: 50%;
+}
+
+.temple img {
+    opacity: 0.75;
+    position: relative;
+    top: -70px;
+    width: 100%;
+}
+
+.intro {
+    position: absolute;
+    /* height: 40%; */
+    top: 15%;
+    left: 30px;
+    font-size: 60px;
+    padding-top: 0px;
+    color: #ef4c16;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 50%;
+    font-weight: bold;
+}
+
+.call-btn {
+    /* color: red; */
+    width: 7rem;
+    font-weight: bold;
+    font-size: large;
+}
+
+.services-name {
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    margin-bottom: 0.5rem;
+    /* border-radius: 25px; */
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.containerServices {
+    display: flex;
+    padding: 1rem;
+    padding-top: 0rem;
+    gap: 1rem;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    margin-top: 5rem;
+}
+
+.card-text {
+    font-size: 1.35rem;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+}
+
+.card-text a {
+    text-decoration: none;
+    color: black;
+}
+
+.carousel {
+    height: 40vh;
+    /* overflow: hidden; */
+}
+
+.carousel-item img {
+    max-height: 40vh;
+}
+
+.buttons img {
+    width: 2rem;
+}
+
+.contactButtons {
+    position: sticky;
+    /* bottom: -10px; */
+    display: flex;
+    gap: 90%;
+    padding: 1.5rem;
+}
+
+.location-text {
+    padding: 1rem;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#call {
+    position: fixed;
+    left: 1rem;
+    bottom: 1.2rem;
+    width: 3rem;
+    opacity: 0.85;
+}
+
+#whatsapp {
+    position: fixed;
+    right: 1rem;
+    bottom: 1.2rem;
+    width: 3rem;
+    opacity: 0.85;
+
+}
+
+.pandit-pic {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.pandit-pic img {
+    width: 8rem;
+    /* height: 5rem; */
+}
+
+#inputMessage {
+    min-height: 5rem;
+}
+
+.language-toggle {
+    position: absolute;
+    top: 7%;
+    right: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: right;
+    gap: 4px;
+    /* padding: 8px; */
+    z-index: 1111;
+    border-radius: 5px;
+}
+
+.language-toggle:hover {
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 16px;
+}
+
+.label {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+/* //styling about  */
+.about {
+    width: 100%;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    justify-content: center;
+    text-align: left;
+}
+
+ol.star-list {
+    list-style-type: none;
+}
+
+ol.star-list li::before {
+    content: '\2605';
+    color: red;
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #f89f9f;
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2rem 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/* contact us form  */
+/* Designing Contact Us form */
+.contact {
+    display: flex;
+    margin: auto;
+    padding: 0%;
+}
+
+.contactfrm {
+    padding: 2rem;
+    padding-top: 0%;
+    font-family: 'PT Serif', serif;
+}
+
+.contactfrm h1 {
+    text-align: center;
+    /* font-size: 1.25rem; */
+}
+
+.contactfrm p {
+    /* font-size: 2rem; */
+    text-align: center;
+}
+
+.form {
+    background-color: #d5f7e4;
+    color: #008000;
+    /* font-family: 'Kaushan Script', cursive; */
+    border: 0.5px solid gainsboro;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    /* padding-bottom: 5rem; */
+}
+
+.form h2 {
+    font-weight: bold;
+    padding-bottom: 1rem;
+    text-align: center;
+    /* font-size: 4rem; */
+}
+
+.message {
+    margin-bottom: 1rem;
+}
+
+.fc {
+    /* margin: 0.25rem 0; */
+    background-color: gray;
+}
+
+
+/* .buttons {
+    position: absolute;
+    top: calc(50% + 60px);
+    left: 100px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+} */
+
+
+/* toggle buttpon  */
+* {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+}
+
+.toggle-button-cover {
+    display: table-cell;
+    position: relative;
+    width: 200px;
+    height: 140px;
+    box-sizing: border-box;
+}
+
+.button-cover {
+    height: 100px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px -8px #c5d6d6;
+    border-radius: 4px;
+}
+
+.button-cover:before {
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+}
+
+.button-cover,
+.knobs,
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button {
+    position: relative;
+    top: 50%;
+    width: 74px;
+    height: 36px;
+    margin: -20px auto 0 auto;
+    overflow: hidden;
+}
+
+.button.r,
+.button.r .layer {
+    border-radius: 100px;
+}
+
+.button.b2 {
+    border-radius: 2px;
+}
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs {
+    z-index: 2;
+}
+
+.layer {
+    width: 100%;
+    background-color: #ebf7fc;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+/* Button 3 */
+#button-3 .knobs:before {
+    content: "Eng";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px;
+    height: 10px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: #03a9f4;
+    border-radius: 50%;
+    transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#button-3 .checkbox:active+.knobs:before {
+    width: 46px;
+    border-radius: 100px;
+}
+
+#button-3 .checkbox:checked:active+.knobs:before {
+    margin-left: -26px;
+}
+
+#button-3 .checkbox:checked+.knobs:before {
+    content: "हिंदी";
+    left: 42px;
+    background-color: #f44336;
+}
+
+#button-3 .checkbox:checked~.layer {
+    background-color: #fcebeb;
+}
